@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(#000000 50%, #ffb92a 50%);
+}
+
+.container{
+    width: 90vw;
+    max-width: 37.5em;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #201f28;
+    padding: 3em 1.8em;
+    border-radius: .6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+.searchContainer{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-gap: 1.2em;
+}
+
+.searchContainer input,
+.searchContainer button {
+    font-size: 0.9em;
+    border-radius: 0.3em;
+    outline: none;
+}
+
+.searchContainer input{
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: .7em;
+    color: #ffffff;
+}
+
+ .searchContainer input:focus{
+    border-color: #ffffff;
+ }
+
+ .searchContainer button{
+    background-color: #ffb92a;
+    outline: none;
+    border: none;
+    cursor: pointer;
+ }
+
+ #result{
+    color: #ffffff;
+ }
+
+.info{
+   position: relative;
+   display: grid;
+   grid-template-columns: 5fr 7fr;
+   margin-top: 1.2em;
+   align-items: center;
+ }
+
+.poster{
+    width: 100%;
+ }
+
+ h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+ }
+
+ .rating{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.6em;
+   margin: 0.6em 0 0.9em 0;
+ }
+
+ .rating i{
+    color: #ffb92a;
+    width: 1.2em;
+ }
+
+ .rating h4{
+    font-size: 1.1em;
+    font-weight: 500;
+    display: inline-block;
+ }
+
+ .details{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.6em 0;
+    color: #a0a0a0;
+    font-weight: 300;
+    font-size: 0.95em;
+ }
+
+ .genre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+ }
+
+ .genre div{
+    border: 1px solid #a0a0a0;
+    padding: 4px 8px;
+ }
+
+ h3{
+   font-weight: 500;
+   margin-top: 1.2em;
+ }
+
+p{
+   color: #a0a0a0;
+   font-size: 1em;
+   font-weight: 500;
+   line-height: 1.5em;
+   text-align: justify;
+   margin-top: 5px;
+ }

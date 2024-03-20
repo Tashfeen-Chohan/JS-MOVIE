@@ -1,4 +1,4 @@
-let key = 'bc50892c'
+let key = "bc50892c";
 
 //Initial References
 let movieNameRef = document.getElementById("movieName");
@@ -11,7 +11,7 @@ let getMovie = () => {
   let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
   //If input field is empty
   if (movieName.length <= 0) {
-    result.innerHTML = `<h3 class="msg">Please Enter A Movie Name</h3>`;
+    result.innerHTML = `<h3 class="msg">Please enter Movie name...</h3>`;
   }
   //If input field is NOT empty
   else {
@@ -58,9 +58,9 @@ let getMovie = () => {
   }
 };
 searchBtn.addEventListener("click", getMovie);
-window.addEventListener("load", getMovie);
-movieName.addEventListener("keypress", function(e){
-    if(e.keyCode===13){
-        getMovie()
-    }
-})
+// window.addEventListener("load", getMovie);
+movieName.addEventListener("keypress", function (e) {
+  if (e.keyCode === 13) {
+    getMovie();
+  }
+});
